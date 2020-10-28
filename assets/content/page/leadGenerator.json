@@ -1,0 +1,67 @@
+{
+  "title": "Was macht eine gute Webseite aus?",
+  "header": {
+    "title": "Was macht eine gute Webseite aus?",
+    "subtitle": "Hilfestellung"
+  },
+  "stakes": {
+    "title": "Erfahren Sie wie eine Webseite begeistert",
+    "subtitle": "Was ist dem Besucher wichtig? Was können Sie bei Ihrer Seite verbessern? Worauf achten wir bei dem Design von Webseiten?"
+  },
+  "valuePropositions": [
+    {
+      "icon": {
+        "type": "fas",
+        "name": "wrench",
+        "margin": 0
+      },
+      "title": "Worauf achten wir?",
+      "text": "In der Hilfestellung haben wir genau beschrieben worauf wir bei unseren Webseiten achten und worauf Sie achten sollten, wenn Sie sich Referenzen von Webseiten anschauen."
+    },
+    {
+      "icon": {
+        "type": "far",
+        "name": "smile",
+        "margin": 0
+      },
+      "title": "Was wollen Ihre Besucher?",
+      "text": "Überlegen Sie sich welche Ziele Ihre Webseitenbesucher auf Ihrer Seite haben und erfahren Sie wie Sie es schaffen Ihre Besucher zu begeistern."
+    },
+    {
+      "icon": {
+        "type": "fas",
+        "name": "bullseye",
+        "margin": 0
+      },
+      "title": "Wie erreichen Sie Ihre Ziele?",
+      "text": "Werden Sie sich darüber im Klaren welchen Zweck Ihre Webseite zu erfüllen hat und wie die Webseite strukturiert sein muss um dieses Ziel zu erreichen."
+    }
+  ],
+  "download": {
+    "title": "Hilfestellung herunterladen",
+    "action": "Jetzt herunterladen",
+    "note": "Dieses Formular speichert Ihren Namen und Ihre E-Mail, sodass wir Sie zu unserer E-Mail Liste hinzufügen und Ihnen hilfreiche Artikel und Neuigkeiten senden können. Bitte informieren Sie sich in unserem Datenschutz darüber, wie wir Ihre Daten speichern und schützen.",
+    "error": {
+      "message": "Da ist leider ein Fehler passiert. Bitte probieren Sie es noch einmal oder schreiben Sie uns eine E-Mail."
+    },
+    "success": {
+      "title": "Viel Erfolg mit unserer Hilfestellung!",
+      "message": "Bereit unsere Hiflestellung anzusehen? Klicken Sie einfach auf den Link. Keine Sorge, falls Sie gerade keine Zeit haben zum durchlesen, es ist bereits alles unterwegs zu Ihrem Postfach."
+    },
+    "link": "/hilfestellungen/Was-macht-eine-gute-Webseite-aus.pdf"
+  },
+  "thankYou": {
+    "text": {
+      "title": "Viel Erfolg mit unserer Hilfestellung!",
+      "text": "Bereit unsere Hiflestellung anzusehen? Klicken Sie einfach auf den Link. Keine Sorge, falls Sie gerade keine Zeit haben zum durchlesen, es ist bereits alles unterwegs zu Ihrem Postfach.",
+      "link": {
+        "to": "/hilfestellungen/Was-macht-eine-gute-Webseite-aus.pdf",
+        "text": "Jetzt herunterladen"
+      }
+    },
+    "header": {
+      "subtitle": "Hilfestellung",
+      "title": "Vielen Dank für Ihr Interesse!"
+    }
+  }
+}

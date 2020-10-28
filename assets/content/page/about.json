@@ -1,0 +1,33 @@
+{
+  "title": "Über uns",
+  "header": {
+    "title": "Wer steckt dahinter?",
+    "subtitle": "Über uns"
+  },
+  "intro": {
+    "title": "Wir liefern klar strukturierte & attraktive Webseiten, sodass Sie online modern dargestellt und von Webseitenbesuchern geliebt werden.",
+    "subtitle": ""
+  },
+  "about": {
+    "pretitle": "Über uns",
+    "title": "Sie brauchen einen Partner, der langfristig an Ihrer Seite bleibt",
+    "text": "In den letzten 4 Jahren habe ich robuste Webseiten erstellt und meine Erfahrung immer weiter ausgebaut, sodass mittlerweile jede Art von Webseite mit Zuverlässigkeit und Professionalität abgeliefert werden kann.\n\nNebenbei studiere ich Informatik im vierten Semester an der LMU in München für einen breiteren Blick auf den Bereich der Informatik.\n\nMein Ziel ist ein Geschäft auf- und auszubauen, das Personen & Unternehmen online modern darstellt.",
+    "subtitle": "Daniel Mössner",
+    "image": "/img/daniel-moessner.500.opt.png"
+  },
+  "faq": {
+    "title": "Antworten",
+    "subtitle": "Auf häufig gestellte Fragen",
+    "questions": [
+      {
+        "question": "Muss ich laufende Kosten einplanen?",
+        "answer": "Das ist davon abhängig ob die Seite dynamisch (Backend, Datenbank, Login zum Texte ändern) oder statisch ist. Statische Seiten können ohne weitere Kosten gehostet werden. Bei dynamischen Seiten bewegen sich die Preise zwischen 5€ und 15€ pro Monat."
+      },
+      {
+        "question": "Wann ist meine Webseite fertig?",
+        "answer": "Wir planen für jede Phase (Strategie, Design, Entwicklung) 1-2 Wochen ein. Damit ist Ihre Webseite nach 3-6 Wochen online. Dabei kann das Vorhandensein von Texten die Zeit verkürzen."
+      }
+    ]
+  },
+  "description": "Tortuga Webdesign liefert klare und attraktive Webseiten, sodass Selbständige und kleine Unternehmen online modern aussehen & von Webseitenbesuchern geliebt werden."
+}

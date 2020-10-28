@@ -1,0 +1,408 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    format: "json"
+    folder: "assets/content/blog"
+    create: true
+    slug: "{{title}}"
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Tags",
+          name: "tags",
+          required: false,
+          widget: "relation",
+          multiple: true,
+          searchFields: ["title"],
+          collection: "tag",
+          valueField: "title",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+  - name: "tag"
+    label: "Tag"
+    format: "json"
+    folder: "assets/content/tag"
+    create: true
+    slug: "{{fields.title}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+  - name: "portfolio"
+    label: "Portfolio"
+    format: "json"
+    folder: "assets/content/portfolio"
+    create: true
+    identifier_field: "title"
+    slug: "{{fields.slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Url", name: "url", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - {
+          label: "Image",
+          name: "image",
+          widget: "image",
+          hint: "Preferably 1500 pixels wide and jpg format.",
+        }
+      - { label: "Active", name: "active", widget: "boolean", required: false }
+      - {
+          label: "Image 500",
+          name: "image500",
+          widget: "image",
+          hint: "Preferably 500 pixels wide and jpg format.",
+        }
+      - {
+          label: "Short Image",
+          name: "shortImage",
+          widget: "image",
+          hint: "Preferably 100 pixels wide and low quality. Should not show the whole page, as it is used as height set for the portfolio showcase.",
+        }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          required: false,
+        }
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Tags",
+          name: "tags",
+          required: false,
+          widget: "relation",
+          multiple: true,
+          searchFields: ["title"],
+          collection: "tag",
+          valueField: "title",
+        }
+  - label: "Page"
+    name: "page"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "assets/content/page/home.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Stakes"
+            name: "stakes"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Value"
+            name: "value"
+            widget: "object"
+            fields:
+              - { label: "Pretitle", name: "pretitle", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Propositions"
+                name: "propositions"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - name: "icon"
+                    label: "Icon"
+                    widget: "object"
+                    fields:
+                      - { label: "Svg", name: "svg", widget: "text" }
+                      - { label: "Margin", name: "margin", widget: "number" }
+          - label: "Guide"
+            name: "guide"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Plan"
+            name: "plan"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Bottom", name: "bottom", widget: "string" }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                field:
+                  name: "step"
+                  label: "Step"
+                  widget: "object"
+                  fields:
+                    - { label: "Title", name: "title", widget: "string" }
+                    - { label: "Text", name: "text", widget: "string" }
+                    - name: "icon"
+                      label: "Icon"
+                      widget: "object"
+                      fields:
+                        - { label: "Svg", name: "svg", widget: "text" }
+                        - { label: "Margin", name: "margin", widget: "number" }
+      - label: "About Page"
+        name: "about"
+        file: "assets/content/page/about.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Intro"
+            name: "intro"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Subtitle",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Pretitle", name: "pretitle", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Questions"
+                name: "questions"
+                widget: "list"
+                fields:
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "string" }
+      - label: "Portfolio Page"
+        name: "portfolio"
+        file: "assets/content/page/portfolio.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - label: "Contact Page"
+        name: "contact"
+        file: "assets/content/page/contact.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Thank You"
+            name: "thankYou"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Text"
+                name: "text"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - { label: "To", name: "to", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }
+      - label: "Blog Page"
+        name: "blog"
+        file: "assets/content/page/blog.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - label: "General"
+        name: "general"
+        file: "assets/content/page/general.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+      - label: "Imprint Page"
+        name: "imprint"
+        file: "assets/content/page/imprint.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Subtitle",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Data Protection Page"
+        name: "dataProtection"
+        file: "assets/content/page/dataProtection.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Subtitle",
+                  name: "subtitle",
+                  widget: "string",
+                  required: false,
+                }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Lead Generator Page"
+        name: "leadGenerator"
+        file: "assets/content/page/leadGenerator.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false,
+            }
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Stakes"
+            name: "stakes"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Value Propositions"
+            name: "valuePropositions"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "string" }
+              - name: "icon"
+                label: "Icon"
+                widget: "object"
+                fields:
+                  - { label: "Svg", name: "svg", widget: "text" }
+                  - { label: "Margin", name: "margin", widget: "number" }
+          - label: "Thank You"
+            name: "thankYou"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Text"
+                name: "text"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+                  - label: "Link"
+                    name: "link"
+                    widget: "object"
+                    fields:
+                      - { label: "To", name: "to", widget: "string" }
+                      - { label: "Text", name: "text", widget: "string" }

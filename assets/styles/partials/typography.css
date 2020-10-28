@@ -1,0 +1,139 @@
+/*
+** This file contains all typography settings
+*/
+
+/* // @font-face {
+//   font-family: "VisbyCF-Thin";
+//   src: url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.eot");
+//   src:
+//     url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.eot?#iefix") format("embedded-opentype"),
+//     url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.woff2") format("woff2"),
+//     url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.woff") format("woff"),
+//     url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.ttf") format("truetype"),
+//     url("/fonts/visby-cf-thin/webfonts/visby-cf-thin.svg#youworkforthem") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// } */
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("/fonts/visby-cf-light/webfonts/visby-cf-light.eot");
+  src:
+    url("/fonts/visby-cf-light/webfonts/visby-cf-light.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/visby-cf-light/webfonts/visby-cf-light.woff2") format("woff2"),
+    url("/fonts/visby-cf-light/webfonts/visby-cf-light.woff") format("woff"),
+    url("/fonts/visby-cf-light/webfonts/visby-cf-light.ttf") format("truetype"),
+    url("/fonts/visby-cf-light/webfonts/visby-cf-light.svg#youworkforthem") format("svg");
+  font-weight: 300;
+  font-style: normal;
+   unicode-range: U+000-5FF;
+}
+
+/* // @font-face {
+//   font-family: "VisbyCF-Regular";
+//   src: url("/fonts/visby-cf/webfonts/visby-cf.eot");
+//   src:
+//     url("/fonts/visby-cf/webfonts/visby-cf.eot?#iefix") format("embedded-opentype"),
+//     url("/fonts/visby-cf/webfonts/visby-cf.woff2") format("woff2"),
+//     url("/fonts/visby-cf/webfonts/visby-cf.woff") format("woff"),
+//     url("/fonts/visby-cf/webfonts/visby-cf.ttf") format("truetype"),
+//     url("/fonts/visby-cf/webfonts/visby-cf.svg#youworkforthem") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// } */
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.eot");
+  src:
+    url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.woff2") format("woff2"),
+    url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.woff") format("woff"),
+    url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.ttf") format("truetype"),
+    url("/fonts/visby-cf-medium/webfonts/visby-cf-medium.svg#youworkforthem") format("svg");
+  font-weight: 500;
+  font-style: normal;
+   unicode-range: U+000-5FF;
+}
+
+/* // @font-face {
+//   font-family: "VisbyCF-DemiBold";
+//   src: url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.eot");
+//   src:
+//     url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.eot?#iefix") format("embedded-opentype"),
+//     url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.woff2") format("woff2"),
+//     url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.woff") format("woff"),
+//     url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.ttf") format("truetype"),
+//     url("/fonts/visby-cf-demi-bold/webfonts/visby-cf-demi-bold.svg#youworkforthem") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// } */
+
+@font-face {
+  font-family: "VisbyCF";
+  src: url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.eot");
+  src:
+    url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.woff2") format("woff2"),
+    url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.woff") format("woff"),
+    url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.ttf") format("truetype"),
+    url("/fonts/visby-cf-bold/webfonts/visby-cf-bold.svg#youworkforthem") format("svg");
+  font-weight: 700;
+  font-style: normal;
+   unicode-range: U+000-5FF;
+}
+
+/* // @font-face {
+//   font-family: "VisbyCF-ExtraBold";
+//   src: url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.eot");
+//   src:
+//     url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.eot?#iefix") format("embedded-opentype"),
+//     url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.woff2") format("woff2"),
+//     url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.woff") format("woff"),
+//     url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.ttf") format("truetype"),
+//     url("/fonts/visby-cf-extra-bold/webfonts/visby-cf-extra-bold.svg#youworkforthem") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// } */
+
+/* // @font-face {
+//   font-family: "VisbyCF-Heavy";
+//   src: url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.eot");
+//   src:
+//     url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.eot?#iefix") format("embedded-opentype"),
+//     url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.woff2") format("woff2"),
+//     url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.woff") format("woff"),
+//     url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.ttf") format("truetype"),
+//     url("/fonts/visby-cf-heavy/webfonts/visby-cf-heavy.svg#youworkforthem") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// } */
+
+small {
+  font-family: 'VisbyCF', Helvetica, Arial, Sans-Serif;
+  font-weight: 300 !important;
+}
+
+body,
+address,
+button,
+textarea,
+select,
+input,
+label {
+  font-family: 'VisbyCF', Helvetica, Arial, Sans-Serif;
+  font-weight: 500 !important;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-family: 'VisbyCF', Helvetica, Arial, Sans-Serif;
+  font-weight: 700 !important;
+}

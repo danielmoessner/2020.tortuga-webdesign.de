@@ -1,0 +1,31 @@
+{
+  "name": "tortuga-webdesign.de",
+  "version": "1.0.0",
+  "description": "The tortuga-webdesign.de site.",
+  "author": "Daniel Mössner",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "bulma": "node-sass assets/styles/bulma.scss -o assets/styles"
+  },
+  "dependencies": {
+    "@nuxtjs/gtm": "^2.3.2",
+    "@nuxtjs/markdownit": "^1.2.10",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@tailwindcss/typography": "^0.2.0",
+    "bulma": "^0.8.2",
+    "cookieconsent": "^3.1.1",
+    "lazysizes": "^5.2.2",
+    "nuxt": "^2.14.7",
+    "tailwindcss": "^1.9.5"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@nuxtjs/svg": "^0.1.12",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "active": true,
+  "slug": "franco-pioli-datenschutz-und-vereinsmanagement",
+  "date": "2020-02-28T11:25:39.518Z",
+  "url": "https://datenschutz-und-vereinsmanagement.de",
+  "title": "Franco Pioli - Datenschutz und Vereinsmanagement",
+  "tags": [
+    "Django",
+    "CMS",
+    "Tailwind CSS"
+  ],
+  "image500": "/img/datenschutz-und-vereinsmanagement.500x.jpg",
+  "image": "/img/datenschutz-und-vereinsmanagement.1500x.jpg",
+  "description": "Franco Pioli unterstützt Vereine die DSGVO einzuhalten. Eine Herausforderung war es seinen Kunden die Möglichkeit zu bieten sich einzuloggen, sodass sie eigens angepasste Artikel und Anleitungen zur Verfügung gestellt bekommen.",
+  "shortImage": "/img/datenschutz-und-vereinsmanagement.short.jpg"
+}

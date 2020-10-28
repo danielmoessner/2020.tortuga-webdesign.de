@@ -1,0 +1,12 @@
+/*
+** These styles will be prepended to every components style section
+*/
+
+// custom variables
+@import "partials/variables";
+
+// bulma stuff
+@import "bulma/sass/utilities/initial-variables.sass";
+@import "bulma/sass/utilities/functions.sass";
+@import "bulma/sass/utilities/derived-variables.sass";
+@import "bulma/sass/utilities/mixins.sass";

@@ -1,0 +1,149 @@
+/*
+** sizes
+*/
+
+/* // width */
+.w-50 {
+  width: 50%;
+}
+
+.mw-400 {
+  max-width: 400px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/* // height */
+.h-200 {
+  height: 200px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+/**
+** margins
+**/
+
+/* // bottom */
+
+.mb-08 {
+  margin-bottom: 0.8rem !important;
+}
+
+.mb-18 {
+  margin-bottom: 1.8rem;
+}
+
+.mb-28 {
+  margin-bottom: 2.8rem;
+}
+
+/* // top */
+.mt-18 {
+  margin-top: 1.8rem;
+}
+
+.mt-40 {
+  margin-top: 4rem;
+}
+
+/*
+** paddings
+*/
+
+.p-50 {
+  padding: 5rem;
+}
+
+.p-20 {
+  padding: 2.0rem;
+}
+
+.p-30 {
+  padding: 3.0rem;
+}
+
+.py-60 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-50 {
+  padding-left: 5.0rem;
+  padding-right: 5.0rem;
+}
+
+@include desktop {
+  md\:p-50 {
+    padding: 5.0rem;
+  }
+}
+
+/*
+** shadows
+*/
+
+.shadow {
+  /* // used on articles or cards */
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.dark-shadow {
+  /* // used on showcases and base-frames */
+  box-shadow: 0 0 2.8rem 0 #484847;
+}
+
+.paper-shadow {
+  /* // used on the lead generator */
+  box-shadow: 4px 4px 8px 0px #484847;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+/*
+** color
+*/
+
+.color-inherit {
+  color: inherit;
+}
+
+/*
+** border
+*/
+
+/* // radius */
+.border-radius-6 {
+  border-radius: 6px;
+}
+
+.border-radius-3 {
+  border-radius: 3px;
+}
+
+/* // color  */
+.border-dark {
+  border-color: hsla(280%, 5%, 12%, 1) !important;
+}
+
+/* // reset */
+.border-none {
+  border: none !important;
+}
+
+/*
+** other
+*/
+.overflow-hidden{
+	overflow: hidden;
+}

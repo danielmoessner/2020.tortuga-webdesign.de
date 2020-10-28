@@ -1,0 +1,9 @@
+/*
+** These styles will end up in a global stylesheet on every page
+*/
+
+// custom variables
+@import "partials/variables";
+
+// bulma
+@import "../../node_modules/bulma/bulma.sass";

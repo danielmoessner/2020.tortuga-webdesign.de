@@ -1,0 +1,27 @@
+/* 
+** This file contains the style for a custom scrollbar
+*/
+
+/*! purgecss start ignore */
+::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 0;
+  background: #7c7c79;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484847;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f1d20;
+}
+/*! purgecss end ignore */

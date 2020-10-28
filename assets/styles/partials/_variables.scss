@@ -1,0 +1,22 @@
+/* 
+** this file contains all custom variables
+*/
+
+/* general colors */
+$color1: hsla(0%, 0%, 100%, 1);
+$color2: hsla(357%, 89%, 47%, 1);
+$color3: hsla(60%, 1%, 28%, 1);
+$color4: hsla(280%, 5%, 12%, 1);
+$color5: hsla(12%, 52%, 6%, 1);
+
+/* bulma */
+// colors
+$primary: $color2;
+$link: $color4;
+$dark: $color4;
+$white-ter: hsl(280, 20%, 97%);
+// form
+$label-weight: 400;
+
+// test
+// $primary: #cc2c34;
